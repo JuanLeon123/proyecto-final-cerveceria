@@ -19,6 +19,7 @@ import { ViewindividualproductComponent } from './components/viewindividualprodu
 import { PacksComponent } from './components/packs/packs.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { FormproductsComponent } from './components/formproducts/formproducts.component';
 
 
 
@@ -39,6 +40,7 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     PacksComponent,
     CartComponent,
     CheckoutComponent,
+    FormproductsComponent,
   ],
   imports: [
     BrowserModule,
