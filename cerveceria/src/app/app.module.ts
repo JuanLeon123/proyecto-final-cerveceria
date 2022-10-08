@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -17,6 +19,10 @@ import { ViewindividualproductComponent } from './components/viewindividualprodu
 import { PacksComponent } from './components/packs/packs.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { FormproductsComponent } from './components/formproducts/formproducts.component';
+import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
+
+
 
 @NgModule({
   declarations: [
@@ -34,11 +40,14 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     ViewindividualproductComponent,
     PacksComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    FormproductsComponent,
+    TableproductsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
