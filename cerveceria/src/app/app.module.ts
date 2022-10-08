@@ -20,6 +20,7 @@ import { PacksComponent } from './components/packs/packs.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormproductsComponent } from './components/formproducts/formproducts.component';
+import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
 
 
 
@@ -41,6 +42,7 @@ import { FormproductsComponent } from './components/formproducts/formproducts.co
     CartComponent,
     CheckoutComponent,
     FormproductsComponent,
+    TableproductsComponent,
   ],
   imports: [
     BrowserModule,
