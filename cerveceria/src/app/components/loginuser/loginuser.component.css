@@ -1,0 +1,35 @@
+
+.paddigLogin{
+    padding: 10% 20%;
+}
+
+.fuenteTitulos{
+    font-family: 'Playfair Display', serif;
+    color: #400101;
+}
+
+.btnInicioSesion{
+    background-color: #400101;
+}
+
+.btnInicioSesion:hover{
+    background-color: #732002;
+}
+
+.backgroungLogin{
+    background-image: url(src/assets/img/fondoLogin.png) ;
+    background-size: cover;
+    
+    position: relative;
+}
+
+.backgroungLogin::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color:rgb(244, 196, 154) ;opacity:0.8;
+}
+
+.posicionContenido{
+    position: relative;
+}

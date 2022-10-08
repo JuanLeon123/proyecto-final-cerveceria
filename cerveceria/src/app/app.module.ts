@@ -17,6 +17,8 @@ import { ViewindividualproductComponent } from './components/viewindividualprodu
 import { PacksComponent } from './components/packs/packs.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { FooterhomeComponent } from './components/footerhome/footerhome.component';
+import { EditprofileComponent } from './components/editprofile/editprofile.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
     ViewindividualproductComponent,
     PacksComponent,
     CartComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    FooterhomeComponent,
+    EditprofileComponent
   ],
   imports: [
     BrowserModule,
