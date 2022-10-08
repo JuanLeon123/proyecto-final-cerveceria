@@ -31,7 +31,8 @@
               
             ],
             "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/popo.js"
             ]
           },
           "configurations": {
@@ -106,6 +107,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "00c6fcf4-95fd-4830-8f6a-3860e774ed01"
+=======
+    "analytics": false
+>>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
   }
 }

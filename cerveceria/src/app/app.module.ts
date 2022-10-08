@@ -1,6 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+<<<<<<< HEAD
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+=======
+
+import { NgxSliderModule } from '@angular-slider/ngx-slider';
+
+>>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -17,6 +23,10 @@ import { ViewindividualproductComponent } from './components/viewindividualprodu
 import { PacksComponent } from './components/packs/packs.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { FormproductsComponent } from './components/formproducts/formproducts.component';
+import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
+
+
 
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -40,12 +50,22 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     PacksComponent,
     CartComponent,
     CheckoutComponent,
+<<<<<<< HEAD
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CarouselModule,
+=======
+    FormproductsComponent,
+    TableproductsComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgxSliderModule
+>>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
   ],
   providers: [],
   bootstrap: [AppComponent],
