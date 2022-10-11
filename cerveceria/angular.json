@@ -108,13 +108,9 @@
   },
   "cli": {
 <<<<<<< HEAD
-<<<<<<< HEAD
     "analytics": "00c6fcf4-95fd-4830-8f6a-3860e774ed01"
 =======
     "analytics": false
 >>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
-=======
-    "analytics": "8abba208-2167-41f9-b522-fb23a93671e1"
->>>>>>> susan
   }
 }

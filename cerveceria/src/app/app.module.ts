@@ -23,7 +23,6 @@ import { ViewindividualproductComponent } from './components/viewindividualprodu
 import { PacksComponent } from './components/packs/packs.component';
 import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
-<<<<<<< HEAD
 import { FormproductsComponent } from './components/formproducts/formproducts.component';
 import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
 
@@ -33,10 +32,6 @@ import { TableproductsComponent } from './components/tableproducts/tableproducts
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
-=======
-import { FooterhomeComponent } from './components/footerhome/footerhome.component';
-import { EditprofileComponent } from './components/editprofile/editprofile.component';
->>>>>>> susan
 
 @NgModule({
   declarations: [
@@ -56,11 +51,6 @@ import { EditprofileComponent } from './components/editprofile/editprofile.compo
     CartComponent,
     CheckoutComponent,
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    FooterhomeComponent,
-    EditprofileComponent
->>>>>>> susan
   ],
   imports: [
     BrowserModule,
