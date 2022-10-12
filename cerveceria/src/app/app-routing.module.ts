@@ -13,6 +13,7 @@ import {ProfileuserComponent} from './components/profileuser/profileuser.compone
 import {EditprofileComponent} from './components/editprofile/editprofile.component';
 import {ListproductsComponent} from './components/listproducts/listproducts.component';
 
+import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,8 +27,11 @@ const routes: Routes = [
   {path: 'Login', component:LoginuserComponent },
   {path: 'PerfilUsuario', component:ProfileuserComponent},
   {path: 'EditarPerfil', component: EditprofileComponent},
-  {path: 'ListadoProductos', component: ListproductsComponent}
-  
+  {path: 'ListadoProductos', component: ListproductsComponent},
+  {path:'', component: HomeComponent },
+  {path:'PacksComponent', component:PacksComponent},
+  {path:'CartComponent', component:CartComponent},
+  {path:'ViewindividualproductComponent', component:ViewindividualproductComponent}
 ];
 
 @NgModule({
