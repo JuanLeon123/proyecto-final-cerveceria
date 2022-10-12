@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
@@ -24,6 +25,14 @@ import { TableproductsComponent } from './components/tableproducts/tableproducts
 
 
 
+
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { EditprofileComponent } from './components/editprofile/editprofile.component';
+import { FooterhomeComponent } from './components/footerhome/footerhome.component';
+import { ListproductsComponent } from './components/listproducts/listproducts.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,10 +52,15 @@ import { TableproductsComponent } from './components/tableproducts/tableproducts
     CheckoutComponent,
     FormproductsComponent,
     TableproductsComponent,
+    EditprofileComponent,
+    FooterhomeComponent,
+    ListproductsComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
+    CarouselModule,
     NgxSliderModule
   ],
   providers: [],
