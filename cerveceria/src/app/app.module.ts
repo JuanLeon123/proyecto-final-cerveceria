@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-<<<<<<< HEAD
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-=======
 
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
->>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -30,6 +27,9 @@ import { TableproductsComponent } from './components/tableproducts/tableproducts
 
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { EditprofileComponent } from './components/editprofile/editprofile.component';
+import { FooterhomeComponent } from './components/footerhome/footerhome.component';
+import { ListproductsComponent } from './components/listproducts/listproducts.component';
 
 
 
@@ -50,22 +50,18 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     PacksComponent,
     CartComponent,
     CheckoutComponent,
-<<<<<<< HEAD
+    FormproductsComponent,
+    TableproductsComponent,
+    EditprofileComponent,
+    FooterhomeComponent,
+    ListproductsComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     CarouselModule,
-=======
-    FormproductsComponent,
-    TableproductsComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
     NgxSliderModule
->>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
   ],
   providers: [],
   bootstrap: [AppComponent],
