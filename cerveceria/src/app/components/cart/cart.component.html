@@ -1,91 +1,100 @@
-<div class="container">
-    <h1>CARRITO DE COMPRAS</h1>
-    <table class="table mt-5">
-        <thead>
-            <tr>
-                <th scope="col"></th>
-                <th scope="col">Foto</th>
-                <th scope="col">Producto</th>
-                <th scope="col">precio</th>
-                <th scope="col">Cantidad</th>
-                <th scope="col">total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">X</th>
-                <td>img</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">X</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">X</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-        </tbody>
-    </table>
-    <form>
-        <div class="mb-3">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="row">
-                    <div class="col-6">
-                        <input type="" class="form-control w-100" id="codigoDescuento" placeholder="Codigo de Descuento">
+<app-navbar2></app-navbar2>
+
+<section class="m-5">
+    <div class="container">
+        <h1>CARRITO DE COMPRAS</h1>
+        <table class="table mt-5">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Foto</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">X</th>
+                    <td>img</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">X</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">X</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+            </tbody>
+        </table>
+        <form>
+            <div class="mb-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="" class="form-control w-100" id="codigoDescuento" placeholder="Codigo de Descuento">
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-dark">APLICAR CUPÓN</button>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <button type="button" class="btn btn-dark">APLICAR CUPÓN</button>
+                    <div>
+                        <button type="button" class="btn btn-dark">ACTUALIZAR CARRITO</button>
                     </div>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-dark">ACTUALIZAR CARRITO</button>
                 </div>
             </div>
-        </div>
-    </form>
-</div>
-
-
-
-<section class="container">
-    <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-6">
-            <h1 class="mt-5 row col-6">TOTAL CARRITO</h1>
-            <table class="table ">
-                <tbody>
-                    <tr>
-                        <th scope="row">Subtotal</th>
-                        <td>$10000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Envio</th>
-                    <td>
-                        <tr>Precio: <span>$10000</span></tr>
-                        <tr>ciudad: <span>Bogota</span></tr>
-                        <tr>Cambiar Direccion</tr>
-                    </td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Total</th>
-                        <td>$45.000</td>
-                    </tr>
-                    <tr class="mt-3 col d-flex flex-direction-row">
-                        <button type="button" class="btn bg-black  btn-dark col-8">FINALIZAR COMPRA</button>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        </form>
     </div>
-    </section>
+    
+    
+    
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 offset-lg-6">
+                <h1 class="mt-5 row col-6">TOTAL CARRITO</h1>
+                <table class="table ">
+                    <tbody>
+                        <tr>
+                            <th scope="row">Subtotal</th>
+                            <td>$10000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Envio</th>
+                        <td>
+                            <tr>Precio: <span>$10000</span></tr>
+                            <tr>ciudad: <span>Bogota</span></tr>
+                            <tr>Cambiar Direccion</tr>
+                        </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td>$45.000</td>
+                        </tr>
+                        <tr class="mt-3 col d-flex flex-direction-row">
+                            <button type="button" class="btn bg-black  btn-dark col-8">FINALIZAR COMPRA</button>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </section>
+
+</section>
+
+
+
+    <app-footer></app-footer>
