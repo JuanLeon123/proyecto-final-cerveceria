@@ -1,16 +1,11 @@
-.fuenteTitulosTabla{
-    font-family: 'Playfair Display', serif;
-}
-.fuenteContenidoTabla{
+
+
+.fuenteTitulos{
     font-family: 'Nunito', sans-serif;
 }
 
-.colorbotones{
-    background-color: #732002;
-}
-
-.colorbotones:hover{
-    background-color: #400101;
+.fuenteBotones{
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -31,8 +26,6 @@
 }
 
 
-
-
 .backgroundUsuarios{
     background-image: url(src/assets/img/fondoListaUsuarios.png);
     background-size: cover;
@@ -50,4 +43,7 @@
 .posicionTitulo{
     position: relative;
 }
+
+
+
 
