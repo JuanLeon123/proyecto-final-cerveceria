@@ -47,3 +47,15 @@
 .bordeRadius{
     border-radius: 10px;
 }
+
+.paddingTitle{
+    padding: 20%;
+}
+
+.btnHome{
+    background-color: #faf6f6;
+}
+
+.btnHome:hover{
+    background-color: #beb6b3;
+}

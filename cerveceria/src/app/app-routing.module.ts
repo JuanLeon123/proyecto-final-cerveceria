@@ -1,24 +1,37 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-<<<<<<< HEAD
 import { CartComponent } from './components/cart/cart.component';
-import {HomeComponent} from './components/home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { PacksComponent } from './components/packs/packs.component';
-
-const routes: Routes = [
-  {path:'', component: HomeComponent },
-  {path:'PacksComponent', component:PacksComponent},
-  {path:'CartComponent', component:CartComponent}
-=======
 import { FormproductsComponent } from './components/formproducts/formproducts.component';
 import { ProductsComponent } from './components/products/products.component';
 import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
+import {FormregisteruserComponent} from './components/formregisteruser/formregisteruser.component';
+import  {ListusersComponent} from './components/listusers/listusers.component';
+import {LoginuserComponent} from './components/loginuser/loginuser.component';  
+import {ProfileuserComponent} from './components/profileuser/profileuser.component';
+import {EditprofileComponent} from './components/editprofile/editprofile.component';
+import {ListproductsComponent} from './components/listproducts/listproducts.component';
+
+import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
 
 const routes: Routes = [
-    { path: 'products', component: ProductsComponent},
-    { path: 'formproducts', component: FormproductsComponent},
-    { path: 'tableproducts', component: TableproductsComponent}
->>>>>>> b401e71d75486ea45a0a8c113230de4900d2d6ab
+  { path: '', component: HomeComponent },
+  { path: 'PacksComponent', component: PacksComponent },
+  { path: 'CartComponent', component: CartComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'formproducts', component: FormproductsComponent },
+  { path: 'tableproducts', component: TableproductsComponent },
+  {path: 'RegistrarUsuario', component:FormregisteruserComponent},
+  {path: 'ListadoUsuarios', component:ListusersComponent},
+  {path: 'Login', component:LoginuserComponent },
+  {path: 'PerfilUsuario', component:ProfileuserComponent},
+  {path: 'EditarPerfil', component: EditprofileComponent},
+  {path: 'ListadoProductos', component: ListproductsComponent},
+  {path:'', component: HomeComponent },
+  {path:'PacksComponent', component:PacksComponent},
+  {path:'CartComponent', component:CartComponent},
+  {path:'ViewindividualproductComponent', component:ViewindividualproductComponent}
 ];
 
 @NgModule({
