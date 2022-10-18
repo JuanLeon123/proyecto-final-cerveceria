@@ -14,6 +14,7 @@ import { EditprofileComponent } from './components/editprofile/editprofile.compo
 import { ListproductsComponent } from './components/listproducts/listproducts.component';
 
 import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
 //JUAN NO ME LO PARTA.... SU INGLES ME LO.... ATT el profesor! 🙃
 //Las url que utiliza un usuario normalmente van en el idioma que habla -.- y sin palabras tecnicas
@@ -35,7 +36,8 @@ const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'PacksComponent', component: PacksComponent },
     { path: 'CartComponent', component: CartComponent },
-    { path: 'ViewindividualproductComponent', component: ViewindividualproductComponent }
+    { path: 'ViewindividualproductComponent', component: ViewindividualproductComponent },
+    { path: 'CheckoutComponent', component: CheckoutComponent}
 ];
 
 @NgModule({
