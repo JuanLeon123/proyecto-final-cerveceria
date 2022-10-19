@@ -22,11 +22,10 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'paquetes', component: PacksComponent },
     { path: 'carrito', component: CartComponent },
     { path: 'productos', component: ProductsComponent },
-    { path: 'formproducts', component: FormproductsComponent },
-    { path: 'tableproducts', component: TableproductsComponent },
+    { path: 'forularioProductos', component: FormproductsComponent },
+    { path: 'tablaproducts', component: TableproductsComponent },
     { path: 'RegistrarUsuario', component: FormregisteruserComponent },
     { path: 'ListadoUsuarios', component: ListusersComponent },
     { path: 'Login', component: LoginuserComponent },
@@ -34,10 +33,9 @@ const routes: Routes = [
     { path: 'EditarPerfil', component: EditprofileComponent },
     { path: 'ListadoProductos', component: ListproductsComponent },
     { path: '', component: HomeComponent },
-    { path: 'PacksComponent', component: PacksComponent },
-    { path: 'CartComponent', component: CartComponent },
-    { path: 'ViewindividualproductComponent', component: ViewindividualproductComponent },
-    { path: 'CheckoutComponent', component: CheckoutComponent}
+    { path: 'paquetesProductos', component: PacksComponent },
+    { path: 'descripcionProducto', component: ViewindividualproductComponent },
+    { path:'pago', component: CheckoutComponent}
 ];
 
 @NgModule({
