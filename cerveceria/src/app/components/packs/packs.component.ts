@@ -39,6 +39,10 @@ export class PacksComponent implements OnInit {
     this.descIndividualProducto.envioDatoDesdePaksDescripion.emit({item 
       })
     }
+
+  addtoIndividual(item: any){
+    this.descIndividualProducto.addtoCartIndividual(item);
+  }
   }
   //productoForm: FormGroup;
 

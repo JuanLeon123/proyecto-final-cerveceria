@@ -1,6 +1,6 @@
 <app-navbar2></app-navbar2>
 <section class="container mt-5 separacionFooter fuenteTextos">
-    <div class="row" *ngFor="let item of products">
+    <div class="row" *ngFor="let item of products ; let i = index">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <img class="w-75" src="{{item.image}}" alt="">
         </div>
@@ -16,10 +16,10 @@
             </div>
             <div class="d-flex flex-direction-row align-items-center h-25 d-inline-block">
                 <div>
-                    <button type="button" class="btn fuenteBotones colorbotones w-100 text-white" routerLink="/paquetesProductos">VOLVER A LA TIENDA</button>
+                    <button type="button" class="btn fuenteBotones colorbotones w-100 text-white" routerLink="/paquetesProductos" (click)="removeItem(item)">VOLVER A LA TIENDA</button>
                 </div>
                 <div>
-                    <button type="button" class="btn fuenteBotones colorbotones w-100 text-white ">AÑADIR AL CARRITO</button>
+                    <button type="button" class="btn fuenteBotones colorbotones w-100 text-white " (click)="[addtocart(item), removeItem(item)]" routerLink="/paquetesProductos">AÑADIR AL CARRITO</button>
                 </div>
             </div>
 
