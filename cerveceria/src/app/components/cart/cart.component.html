@@ -30,10 +30,8 @@
                     <td>{{item.title}}</td>
                     <td>{{item.price}}</td>
                     <td>
-                        <div class="btn-group w-25 me-2" role="group" aria-label="Basic outlined example">
-                            <button type="button" class="btn btn-outline-dark">-</button>
+                        <div class="btn-group w-25 me-2" role="group" aria-label="Basic outlined example"> 
                             <button type="button" class="btn btn-light border-dark">{{item.quantity}}</button>
-                            <button type="button" class="btn btn-outline-dark">+</button>
                         </div>
                     </td>
                     <td>{{item.total}}</td>
@@ -67,14 +65,10 @@
                                 <th scope="row"><strong>Subtotal</strong></th>
                                 <td class="fw-bold">${{grandTotal}}</td>
                             </tr>
-                            <tr>
-                                <th scope="row">Envio</th>
-                                <td>
-                            <tr>Precio: <span>$10000</span></tr>
-                            </tr>
-                            <tr>
-                                <th scope="row">Total</th>
-                                <td>$45.000</td>
+                           
+                            <tr >
+                                <th scope="row" class="fs-4">Total</th>
+                                <td class="fs-4">${{grandTotal}}</td>
                             </tr>
                             <tr class="mt-3 col d-flex flex-direction-row">
                                 <button type="button" class="btn colorbotones text-white  fuenteBotones col-8" routerLink="/pago">CHECKOUT</button>
