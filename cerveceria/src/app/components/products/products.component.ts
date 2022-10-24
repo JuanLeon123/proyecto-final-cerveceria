@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Options } from "@angular-slider/ngx-slider";
+import { apiService } from 'src/app/services/api.service';
 @Component({
     selector: 'app-products',
     templateUrl: './products.component.html',
@@ -13,14 +14,19 @@ export class ProductsComponent implements OnInit {
         floor: 0,
         ceil: 100
     };
+    CartService: any;
 
-    constructor() { }
+    //public productList : any;
+    
+    //constructor(private api : ApiService){}
 
     ngOnInit(): void {
-
+       /* this.api.getProducts()
+         .subscribe(res => {
+            this.productList = res;
+         });*/
     }
-    pepe() {
-        console.log("juan es peye")
-    }
-
+addtocart(item : any){
+    this.CartService.addtocart(item);
+}
 }

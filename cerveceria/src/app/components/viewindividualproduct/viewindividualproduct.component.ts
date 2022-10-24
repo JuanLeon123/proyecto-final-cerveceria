@@ -1,4 +1,7 @@
+import { SlicePipe } from '@angular/common';
+import { isNgTemplate } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { DescriocionIndividualService } from 'src/app/services/descriocion-individual.service';
 
 @Component({
   selector: 'app-viewindividualproduct',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewindividualproductComponent implements OnInit {
 
-  constructor() { }
+  public products : any = [];
+
+  constructor(private descIndividualProducto : DescriocionIndividualService) { }
 
   ngOnInit(): void {
+    this.descIndividualProducto.envioDatoDesdePaksDescripion.subscribe( item =>{
+      console.log('recibiendo data....', item);
+      this.products.push(item)
+    })
   }
 
 }

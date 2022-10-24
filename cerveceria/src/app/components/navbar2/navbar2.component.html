@@ -39,17 +39,12 @@
                         <i class=" ms-5 fa-brands fa-square-instagram fa-2xl text-white"></i>
                     </li>
                     <li>
-                        <button class=" btn nav-item text-center d-flex flex-direction-row">
+                        <button class=" btn nav-item text-center d-flex flex-direction-row" routerLink="/carrito">
                             <i class="fas fa-cart-plus ms-3 colorItemsNavPrincipales text-white" style="font-size:30px;"></i>
-                            <div class="badge bg-danger" style="font-size:10px;">5</div>
+                            <div class="badge bg-danger" style="font-size:10px;">{{totalItem}}</div>
                         </button>
                     </li>
-                    <li>
-                        <input type="text" class="ms-3" style="font-size: 30px;" placeholder="Buscar Productos">
-                        <span class="fas fa-search search-icon"></span>
-                    </li>
                 </ul>
-
             </div>
         </div>
     </nav>

@@ -6,21 +6,24 @@
                 <h2><span class="fs-1 fuenteBotones">LOS</span><br><span class="fuenteBotones fuenteGrande">PAKS</span></h2>
             </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card h-50">
-                    <img src="assets/img/paks/Black-Box-Deluxe.png" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
+        <div class=" container">                   
+            <div class="row">
+                <ng-container  *ngFor="let item of productList" >
+                    <div class="card col-sm-1 col-lg-4 col-md-3 mb-3" style="height: 700px;">
+                        <img style="cursor:pointer;" (click)="descProducto(item)"  routerLink="/descripcionProducto" src="{{item.image}}" class=" w-25 h-25 " alt="...">
+                        <div class="card-body ">
+                            <h3 class="card-title text-center fs-4">{{item.title}}</h3>
+                            <p class="card-text text-center">{{item.description}}</p>
+                            <p class="card-text text-center  fuenteBotones fw-bold fs-5"><strong>Price:</strong>${{item.price}}</p>
+                        </div>
+                        <div class="text-center btn-dark row p-3 ">
+                            <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart"
+                                (click)="addtocart(item)">Añadir al carrito</button>
+                        </div>
                     </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
+                </ng-container>  
             </div>
-            <div class="col">
+        <!--   <div class="col">
                 <div class="card h-100">
                     <img src="assets/img/paks/Black-Box-Mystery.png" class="card-img-top" alt="...">
                     <div class="card-body ">
@@ -262,13 +265,13 @@
                         <h5 class="card-title text-center fs-4">Duvel Gift Pack</h5>
                         <p class="card-text text-center">600 ml | 6% | Porter</p>
                         <p class="card-text text-center fuenteBotones fw-bold fs-4">$33.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
+                    </div>-->
+                    <!--<div class="text-center btn-dark row p-3 ">
                         <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
+                    </div>-->
                 </div>
             </div>
-        </div>
-    </div>
+        <!--</div>
+    </div>-->
 </section>
 <app-footer></app-footer>
