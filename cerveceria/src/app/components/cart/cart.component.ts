@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CartService } from 'src/app/services/cart.service';
+import { DescriocionIndividualService } from 'src/app/services/descriocion-individual.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,15 +9,23 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
-  cartForm: FormGroup;
+ 
+  public products : any = [];
+  public grandTotal !: number;
 
-  constructor(private fb:FormBuilder) {
-    this.cartForm = this.fb.group({
-      cart: ['', Validators.required],
-    })
-   }
+  constructor(private cartService : CartService ){}
 
   ngOnInit(): void {
+    this.cartService.getProducts()
+    .subscribe(res=>{
+      this.products = res;
+      this.grandTotal = this.cartService.getTotalPrice();
+    })
   }
-
+  removeItem(item: any){
+    this.cartService.removeCartItem(item);
+  }
+  emptyCart(){
+    this.cartService.removeAllCart();
+  }
 }

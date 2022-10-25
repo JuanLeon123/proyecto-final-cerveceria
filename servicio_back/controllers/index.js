@@ -9,5 +9,5 @@ module.exports = {
     getProductoCart,
     addProductoCart,
     putProduct,
-    deleteProduct,
+    deleteProduct
 };

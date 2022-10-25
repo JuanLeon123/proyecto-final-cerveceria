@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { CartService } from 'src/app/services/cart.service';
+import { CheckoutService } from 'src/app/services/checkout.service';
 
 @Component({
   selector: 'app-checkout',
@@ -7,9 +10,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor() { }
+  datosEnvioForm: FormGroup;
+
+  public products : any = [];
+  public grandTotal !: number;
+
+  constructor(private cartService : CartService, private fb : FormBuilder   ) {
+
+    this.datosEnvioForm = this.fb.group({
+        nombreApellido : ['', Validators.required], 
+        identificacion : ['', Validators.required], 
+        direccionCiudad : ['', Validators.required], 
+        departamento : ['', Validators.required], 
+        telefono : ['', Validators.required], 
+        email : ['', Validators.required] 
+    })
+
+   }
+  
+  
 
   ngOnInit(): void {
+    this.cartService.getProducts()
+    .subscribe(res=>{
+      this.products = res;
+      this.grandTotal = this.cartService.getTotalPrice();
+    })
   }
+
+  
 
 }

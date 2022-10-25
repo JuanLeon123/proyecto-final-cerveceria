@@ -1,6 +1,6 @@
 const express = require('express');
 const cors= require('cors');
-const controllers = require('/controllers');
+const controllers = require('./controllers');
 
 const db =require("./Database");
 
@@ -31,3 +31,5 @@ app.listen(4000, () => {
 });
 
 module.exports = app;
+
+//pepes

@@ -34,7 +34,7 @@
 
 
 .backgroundUsuarios{
-    background-image: url(src/assets/img/fondoListaUsuarios.png);
+    /*background-image: url(src/assets/img/fondoListaUsuarios.png);*/
     background-size: cover;
     
     position: relative;
