@@ -1,7 +1,7 @@
 <section id="formCheckout" class="mt-5 mb-5 container">
     <div class="row" > 
-        <div id="formu" class="col-sm-12 col-lg-6" > <!---->
-            <form class="mt-5" [formGroup]="datosEnvioForm" (ngSubmit)="agregarInformacion()">  <!---->
+        <div id="formu" class="col-sm-12 col-lg-6" [formGroup]="datosEnvioForm" (ngSubmit)="agregarInformacion()"> <!---->
+            <form class="mt-5" >  <!---->
                 <h1>Detalle de Facturación</h1>
                 <div class="mb-3 mt-5">
                     <input type="text" formControlName="nombreApellido" class="form-control" id="nombre" placeholder="Nombre y Apellido">
@@ -21,6 +21,9 @@
                 <div class="mb-3">
                     <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
                 </div>
+                <div class="mt-3 col d-flex flex-direction-row">
+                    <button type="submit" class="btn bg-black  btn-dark col-8">FINALIZAR COMPRA</button>
+                </div>
             </form>
         </div>
 
@@ -36,7 +39,7 @@
                        
                         <tr>
                             <th scope="row" class="fs-4">Total</th>
-                            <td class="fw-bold fs-4">${{grandTotal}}</td>
+                            <td class="fw-bold fs-4">${{grandTotal}}</td> <!--formControlName="total"-->
                         </tr>
                     </tbody>
                     <div>
@@ -57,9 +60,6 @@
                             <p>
                                 Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.
                             </p>
-                        </div>
-                        <div class="mt-3 col d-flex flex-direction-row">
-                            <button type="button" class="btn bg-black  btn-dark col-8">FINALIZAR COMPRA</button>
                         </div>
                         <div class="mt-3 col d-flex flex-direction-row">
                             <button type="button" class="btn bg-black  btn-dark col-8" routerLink="/carrito">VOLVER AL CARRITO</button>

@@ -23,8 +23,9 @@ export class CheckoutComponent implements OnInit {
         direccionCiudad : ['', Validators.required], 
         departamento : ['', Validators.required], 
         telefono : ['', Validators.required], 
-        email : ['', Validators.required] 
-    })
+        email : ['', Validators.required]
+        //total : ['', Validators.required] 
+      })
 
    }
   
