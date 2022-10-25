@@ -1,3 +1,38 @@
+
+.backgroundUsuarios{
+    /*background-image: url(src/assets/img/fondoListaUsuarios.png);*/
+    background-size: cover;
+    
+    position: relative;
+}
+
+.backgroundUsuarios::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color:rgb(244, 196, 154) ;opacity:0.6;
+}
+
+.posicionTitulo{
+    position: relative;
+}
+
+.fuenteTitulos{
+    font-family: 'Nunito', sans-serif;
+}
+
+.colorbotones{
+    background-color: #732002;
+
+}
+
+.colorbotones:hover{
+    background-color: #400101;
+}
+.fuenteBotones{
+
+    font-family: 'Playfair Display', serif;
+}
 .nuevo {
     position: absolute;
     top: 10%;

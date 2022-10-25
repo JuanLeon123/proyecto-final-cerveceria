@@ -34,10 +34,10 @@ const routes: Routes = [
     { path: 'EditarPerfil', component: EditprofileComponent },
     { path: 'ListadoProductos', component: ListproductsComponent },
     { path: '', component: HomeComponent },
-    { path: 'PacksComponent', component: PacksComponent },
-    { path: 'CartComponent', component: CartComponent },
-    { path: 'ViewindividualproductComponent', component: ViewindividualproductComponent },
-    { path: 'CheckoutComponent', component: CheckoutComponent}
+    { path: 'CheckoutComponent', component: CheckoutComponent },
+    { path: 'paquetesProductos', component: PacksComponent },
+    { path: 'descripcionProducto', component: ViewindividualproductComponent },
+    { path: 'pago', component: CheckoutComponent }
 ];
 
 @NgModule({
@@ -45,3 +45,7 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+
+
