@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewChild, Renderer2,ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-loginuser',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginuserComponent implements OnInit {
 
-  constructor() { }
+  @ViewChild('desplegarNavAdmin') btnNavAdmin?:ElementRef
+  @ViewChild('.NavAdmin') ViewNavAdmin?:ElementRef
+  
+
+  constructor(private renderer2: Renderer2) { }
 
   ngOnInit(): void {
+  }
+
+  desplegarNav(){
+    const desplegarNavAdmin = this.ViewNavAdmin?.nativeElement
+    this.renderer2.removeClass(desplegarNavAdmin,"visually-hidden")
   }
 
 }
