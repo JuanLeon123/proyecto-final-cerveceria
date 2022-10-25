@@ -12,9 +12,9 @@ import { LoginuserComponent } from './components/loginuser/loginuser.component';
 import { ProfileuserComponent } from './components/profileuser/profileuser.component';
 import { EditprofileComponent } from './components/editprofile/editprofile.component';
 import { ListproductsComponent } from './components/listproducts/listproducts.component';
-
 import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+
 
 //JUAN NO ME LO PARTA.... SU INGLES ME LO.... ATT el profesor! 🙃
 //Las url que utiliza un usuario normalmente van en el idioma que habla -.- y sin palabras tecnicas
