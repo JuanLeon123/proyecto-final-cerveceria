@@ -10,10 +10,10 @@ import { registrarusuario } from 'src/app/models/registrarusuario';
 })
 export class FormregisteruserComponent implements OnInit {
 
-  @ViewChild('formClub') segundofromulario?:ElementRef
-  @ViewChild('btninfoClub') btndesplegarInfo?:ElementRef
-  @ViewChild('btnOcultar') btnOcultarForm?:ElementRef
-
+    @ViewChild('btninfoClub') btndesplegarInfo?:ElementRef
+    @ViewChild('btnOcultar') btnOcultarForm?:ElementRef
+    @ViewChild('formClub') segundofromulario?:ElementRef
+//pepe
 
   registerUser: FormGroup
   regexNumero = /^[0-9]+$/;
