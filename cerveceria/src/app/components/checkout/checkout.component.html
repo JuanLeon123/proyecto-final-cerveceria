@@ -1,25 +1,25 @@
 <section id="formCheckout" class="mt-5 mb-5 container">
     <div class="row" > 
-        <div id="formu" class="col-sm-12 col-lg-6" > <!--(ngSubmit)="agregarInformacion()"-->
-            <form class="mt-5" >  <!--[formGroup]="datosEnvioForm"-->
+        <div id="formu" class="col-sm-12 col-lg-6" > <!---->
+            <form class="mt-5" [formGroup]="datosEnvioForm" (ngSubmit)="agregarInformacion()">  <!---->
                 <h1>Detalle de Facturación</h1>
                 <div class="mb-3 mt-5">
-                    <input type="text" formControlName="nombreApellido " class="form-control" id="nombre" placeholder="Nombre y Apellido">
+                    <input type="text" formControlName="nombreApellido" class="form-control" id="nombre" placeholder="Nombre y Apellido">
                 </div>
                 <div class="mb-3">
-                    <input type="number" formControlName="identificacion " class="form-control" id="identificacion" placeholder="Identificación">
+                    <input type="number" formControlName="identificacion" class="form-control" id="identificacion" placeholder="Identificación">
                 </div>
                 <div class="mb-3">
-                    <input type="text" formControlName="direccionCiudad " class="form-control" id="direccion" placeholder="Dirección y Ciudad">
+                    <input type="text" formControlName="direccionCiudad" class="form-control" id="direccion" placeholder="Dirección y Ciudad">
                 </div>
                 <div class="mb-3">
-                    <input type="text" formControlName="departamento " class="form-control" id="departamento" placeholder="Departamento">
+                    <input type="text" formControlName="departamento" class="form-control" id="departamento" placeholder="Departamento">
                 </div>
                 <div class="mb-3">
-                    <input type="number" formControlName="telefono " class="form-control" id="telefono" placeholder="Telefono">
+                    <input type="number" formControlName="telefono" class="form-control" id="telefono" placeholder="Telefono">
                 </div>
                 <div class="mb-3">
-                    <input type="email" formControlName="email " class="form-control" id="exampleInputEmail1" placeholder="Email address">
+                    <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" placeholder="Email address">
                 </div>
             </form>
         </div>

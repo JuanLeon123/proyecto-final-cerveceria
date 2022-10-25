@@ -56,6 +56,7 @@ import { ListproductsComponent } from './components/listproducts/listproducts.co
     EditprofileComponent,
     FooterhomeComponent,
     ListproductsComponent
+
   ],
   imports: [
     BrowserModule,

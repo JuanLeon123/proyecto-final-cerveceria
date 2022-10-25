@@ -38,6 +38,9 @@ export class CheckoutComponent implements OnInit {
     })
   }
 
+  agregarInformacion(){
+    console.log(this.datosEnvioForm)
+  }
   
 
 }
