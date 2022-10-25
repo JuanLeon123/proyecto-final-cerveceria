@@ -59,7 +59,8 @@ import { ReactiveFormsModule } from "@angular/forms";
         EditprofileComponent,
         FooterhomeComponent,
         ListproductsComponent,
-    NotFoundComponent
+        NotFoundComponent
+    
     ],
     imports: [
         BrowserModule,
@@ -68,8 +69,8 @@ import { ReactiveFormsModule } from "@angular/forms";
         CarouselModule,
         NgxSliderModule,
         ReactiveFormsModule,
-        HttpClientModule,
-    ReactiveFormsModule
+        HttpClientModule
+    
     ],
     providers: [],
     bootstrap: [AppComponent]

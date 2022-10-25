@@ -12,11 +12,9 @@ import { LoginuserComponent } from './components/loginuser/loginuser.component';
 import { ProfileuserComponent } from './components/profileuser/profileuser.component';
 import { EditprofileComponent } from './components/editprofile/editprofile.component';
 import { ListproductsComponent } from './components/listproducts/listproducts.component';
-
 import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-
 
 
 
