@@ -3,13 +3,9 @@
     padding: 10% 20%;
 }
 
-.fuenteBotones{
+.fuenteTitulos{
     font-family: 'Playfair Display', serif;
-    
-}
-
-.fuenteTexto{
-    font-family: 'Nunito', sans-serif;
+    color: #400101;
 }
 
 .btnInicioSesion{

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Options } from "@angular-slider/ngx-slider";
-import { apiService } from 'src/app/services/api.service';
+import { ProductsService } from 'src/app/services/products.service';
+import { Productos } from 'src/app/models/productos';
+
 @Component({
     selector: 'app-products',
     templateUrl: './products.component.html',
@@ -14,19 +16,33 @@ export class ProductsComponent implements OnInit {
         floor: 0,
         ceil: 100
     };
-    CartService: any;
 
-    //public productList : any;
-    
-    //constructor(private api : ApiService){}
+    listaProductosAccesorios: Productos[] = [];
+    listaProductosCervezas: Productos[] = [];
+
+    constructor(private _productoService: ProductsService ) { }
 
     ngOnInit(): void {
-       /* this.api.getProducts()
-         .subscribe(res => {
-            this.productList = res;
-         });*/
+        this.obtenerAccesorios("Accesorios");
+        this.obtenerAccesorios("Cervezas");
     }
-addtocart(item : any){
-    this.CartService.addtocart(item);
-}
+
+    obtenerAccesorios(textoCategoria:any) {
+        this._productoService.getProductosxCategoria(textoCategoria).subscribe(data => {
+            switch (textoCategoria) {
+                case "Accesorios":
+                    this.listaProductosAccesorios = data
+                    console.log(textoCategoria+": ",this.listaProductosAccesorios);
+                    break;
+                case "Cervezas":
+                    this.listaProductosCervezas = data
+                    console.log(textoCategoria+": ",this.listaProductosCervezas);
+                    break;
+            }
+            console.log("%c ----------------------------------", "color: yellow; font-size: 2rem;")
+        }, error => {
+            console.log(error)
+        });
+    }
+
 }
