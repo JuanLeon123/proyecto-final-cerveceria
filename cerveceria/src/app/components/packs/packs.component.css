@@ -1,0 +1,16 @@
+.fuenteTitulos{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.colorBotones{
+    background-color: #732002;
+
+}
+
+.colorBotones:hover{
+    background-color: #400101;
+}
+
+.fuenteBotones{
+    font-family: 'Playfair Display', serif;
+}

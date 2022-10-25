@@ -22,11 +22,18 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormproductsComponent } from './components/formproducts/formproducts.component';
 import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
-import { ReactiveFormsModule } from '@angular/forms';
+
+
+
+
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { EditprofileComponent } from './components/editprofile/editprofile.component';
 import { FooterhomeComponent } from './components/footerhome/footerhome.component';
 import { ListproductsComponent } from './components/listproducts/listproducts.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+
+import { ReactiveFormsModule } from "@angular/forms";
+
 
 
 
@@ -51,7 +58,8 @@ import { ListproductsComponent } from './components/listproducts/listproducts.co
         TableproductsComponent,
         EditprofileComponent,
         FooterhomeComponent,
-        ListproductsComponent
+        ListproductsComponent,
+    NotFoundComponent
     ],
     imports: [
         BrowserModule,
@@ -60,7 +68,8 @@ import { ListproductsComponent } from './components/listproducts/listproducts.co
         CarouselModule,
         NgxSliderModule,
         ReactiveFormsModule,
-        HttpClientModule
+        HttpClientModule,
+    ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]
