@@ -1,7 +1,11 @@
 
-
-.fuenteTextos{
+.fuenteTitulos{
     font-family: 'Nunito', sans-serif;
+    
+}
+
+.fuenteBotones{
+    font-family: 'Playfair Display', serif;
 }
 
 .colorbotones{
