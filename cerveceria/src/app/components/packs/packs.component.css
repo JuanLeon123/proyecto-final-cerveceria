@@ -9,6 +9,9 @@
     top: 50%;
     padding: 2%;
 }
+.fuenteTitulos{
+    font-family: 'Work Sans', sans-serif;
+}
 
 .colorBotones{
     background-color: #732002;
