@@ -1,11 +1,7 @@
 
-.fuenteTitulos{
-    font-family: 'Nunito', sans-serif;
-    
-}
 
-.fuenteBotones{
-    font-family: 'Playfair Display', serif;
+.fuenteTextos{
+    font-family: 'Nunito', sans-serif;
 }
 
 .colorbotones{
@@ -29,7 +25,7 @@
 
 
 .backgroundRegistro{
-    /*background-image: url(src/assets/img/fondoListaUsuarios.png);*/
+    background-image: url(src/assets/img/fondoListaUsuarios.png);
     background-size: cover;
     
     position: relative;

@@ -1,28 +1,27 @@
 <app-navbar2></app-navbar2>
-<section class="container mt-5 separacionFooter fuenteTextos">
-    <div class="row" *ngFor="let item of products ; let i = index">
+<section class="container mt-5">
+    <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-            <img class="w-75" src="{{item.image}}" alt="">
+            <img class="w-75" src="assets/img/AC-DC-Cerveza.png" alt="">
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
             <div class="h-25 d-inline-block">
-
-
-                <h3 class="border-bottom border-warning">{{item.title}}</h3>
-                <p class="fw-bold fs-4"><strong>Price:</strong>${{item.price}}</p>
-                <p>{{item.description}}</p>
-
+                <h3 class="border-bottom border-warning">AC-DC-Cerveza</h3>
+                <p class="fw-bold fs-4">$10.000</p>
+                <p>Cerveza Artesanal Alameda Garabato tipo Mosaic Pilsner. Cerveza Rubia, cristalina y con buena espuma. Cuerpo medio a bajo, ﬁnal seco y refrescante con aroma medio a lúpulos tropicales como maracuyá. Amargor bajo. Maridaje: Pollos, ensaladas,
+                    salmón, queso mozzarella, queso fresco de cabra o similar. Cerveza que hace énfasis en la cultura de Cali, Colombia resaltando el barrio Alameda; un barrio popular que tiene muchas historias y por lo tanto le hacen homenaje.</p>
             </div>
             <div class="d-flex flex-direction-row align-items-center h-25 d-inline-block">
-                <div>
-                    <button type="button" class="btn fuenteBotones colorbotones w-100 text-white" routerLink="/paquetesProductos" (click)="removeItem(item)">VOLVER A LA TIENDA</button>
+                <div class="btn-group w-25 me-2" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-dark">-</button>
+                    <button type="button" class="btn btn-outline-dark">1</button>
+                    <button type="button" class="btn btn-outline-dark">+</button>
                 </div>
                 <div>
-                    <button type="button" class="btn fuenteBotones colorbotones w-100 text-white " (click)="[addtocart(item), removeItem(item)]" routerLink="/paquetesProductos">AÑADIR AL CARRITO</button>
+                    <button type="button" class="btn bg-black  btn-dark w-100 ">AÑADIR AL CARRITO</button>
                 </div>
             </div>
-
             <h3>INFORMACION ADICIONAL</h3>
             <table class="table table-striped mt-3 border-top">
                 <tbody>
@@ -60,10 +59,6 @@
     </div>
 </section>
 
-
-
-
 <section style="margin-top: 200px">
     <app-footer></app-footer>
 </section>
-
