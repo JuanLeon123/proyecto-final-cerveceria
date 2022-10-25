@@ -15,9 +15,9 @@ import { ListproductsComponent } from './components/listproducts/listproducts.co
 
 import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
-//JUAN NO ME LO PARTA.... SU INGLES ME LO.... ATT el profesor! 🙃
-//Las url que utiliza un usuario normalmente van en el idioma que habla -.- y sin palabras tecnicas
+
 
 
 const routes: Routes = [
@@ -37,7 +37,9 @@ const routes: Routes = [
     { path: 'PacksComponent', component: PacksComponent },
     { path: 'CartComponent', component: CartComponent },
     { path: 'ViewindividualproductComponent', component: ViewindividualproductComponent },
-    { path: 'CheckoutComponent', component: CheckoutComponent}
+    { path: 'CheckoutComponent', component: CheckoutComponent},
+    { path:  '404'   , component: NotFoundComponent},
+    { path: '**', redirectTo: '404', pathMatch: 'full'}
 ];
 
 @NgModule({
