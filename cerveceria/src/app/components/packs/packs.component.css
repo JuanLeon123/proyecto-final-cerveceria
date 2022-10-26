@@ -10,15 +10,23 @@
     padding: 2%;
 }
 
-.colorBotones{
+.fuenteTitulos {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.colorBotones {
     background-color: #732002;
 }
 
-.fuenteBotones{
+.colorBotones:hover {
+    background-color: #400101;
+}
+
+.fuenteBotones {
     font-family: 'Playfair Display', serif;
 }
 
-.fuenteGeneral{
+.fuenteGeneral {
     font-family: 'Nunito', sans-serif;
 }
 
@@ -26,7 +34,7 @@
     margin-left: 50px;
 }
 
-.imagenFondo{
+.imagenFondo {
     display: flex;
     justify-content: top;
     align-items: center;
@@ -39,26 +47,26 @@
     width: 100%;
 }
 
-.colorTexto{
+.colorTexto {
     color: #732002;
 }
 
-.bordeRadius{
+.bordeRadius {
     border-radius: 10px;
 }
 
-.paddingTitle{
+.paddingTitle {
     padding: 20%;
 }
 
-.btnHome{
+.btnHome {
     background-color: #faf6f6;
 }
 
-.btnHome:hover{
+.btnHome:hover {
     background-color: #beb6b3;
 }
 
-.fuenteGrande{
+.fuenteGrande {
     font-size: 4rem;
 }
