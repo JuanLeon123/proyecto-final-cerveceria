@@ -9,7 +9,7 @@ import { DescriocionIndividualService } from 'src/app/services/descriocion-indiv
   styleUrls: ['./cart.component.css']
 })
 export class CartComponent implements OnInit {
- 
+
   public products : any = [];
   public grandTotal !: number;
 

@@ -20,6 +20,7 @@ export class ProductsComponent implements OnInit {
     listaProductosAccesorios: Productos[] = [];
     listaProductosCervezas: Productos[] = [];
 
+
     constructor(private _productoService: ProductsService ) { }
 
     ngOnInit(): void {

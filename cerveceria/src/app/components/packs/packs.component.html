@@ -1,277 +1,38 @@
 <app-navbar2></app-navbar2>
-<section class="mt-4 mb-5">
-    <div class="container-fluid" id="masVendidasYrecomendadas">
-        <div class="container d-flex">
-            <div>
-                <h2><span class="fs-1 fuenteBotones">LOS</span><br><span class="fuenteBotones fuenteGrande">PAKS</span></h2>
-            </div>
-        </div>
-        <div class=" container">                   
-            <div class="row">
-                <ng-container  *ngFor="let item of productList" >
-                    <div class="card col-sm-1 col-lg-4 col-md-3 mb-3" style="height: 700px;">
-                        <img style="cursor:pointer;" (click)="addtoIndividual(item)"  routerLink="/descripcionProducto" src="{{item.image}}" class=" w-25 h-25 " alt="...">
-                        <div class="card-body ">
-                            <h3 class="card-title text-center fs-4">{{item.title}}</h3>
-                            <p class="card-text text-center">{{item.description}}</p>
-                            <p class="card-text text-center  fuenteBotones fw-bold fs-5"><strong>Price:</strong>${{item.price}}</p>
-                        </div>
-                        <div class="text-center btn-dark row p-3 ">
-                            <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart"
-                                (click)="addtocart(item)">Añadir al carrito</button>
-                        </div>
-                    </div>
-                </ng-container>  
-            </div>
-        <!--   <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Black-Box-Mystery.png" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center"> <span>600 ml</span>  | <span>8.2% </span> | <span>Porter</span> </p>
-                        <p class="card-text text-center fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
+<div class="row">
+    <div class="col-2">
+        <app-products></app-products>
+    </div>
+    <div class="col-10">
+        <section class="mt-4 mb-5">
+            <div class="container-fluid" id="masVendidasYrecomendadas">
+                <div class="container d-flex">
+                    <div>
+                        <h2><span class="fs-1 fuenteBotones">LOS</span><br><span class="fuenteBotones fuenteGrande">PAKS</span></h2>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Brudge-Zot-Gift-Pack.png" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
+                <div class=" container">
+                    <div class="row">
+                        <ng-container *ngFor="let item of productList">
+                            <div class="card col-sm-1 col-lg-4 col-md-3 mb-3" style="height: 700px;">
+                                <img style="cursor:pointer;" (click)="addtoIndividual(item)" routerLink="/descripcionProducto" src="{{item.imagen}}" class=" w-25 h-25 " alt="...">
+                                <div class="card-body ">
+                                    <h3 class="card-title text-center fs-4">{{item.nombre}}</h3>
+                                    <p class="card-text text-center">{{item.descripcion}}</p>
+                                    <p class="card-text text-center  fuenteBotones fw-bold fs-5">
+                                        <strong>Price:</strong>${{item.precio | number}}</p>
+                                </div>
+                                <div class="text-center btn-dark row p-3 ">
+                                    <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart" (click)="addtocart(item)">Añadir al carrito</button>
+                                </div>
+                            </div>
+                        </ng-container>
                     </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Gift-Pack-Delirium-Christmas.png" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Gift-Pack-Delirium.png" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Gift-Pack-Erdinger.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Gift-Pack-Hofbrau.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Pack-Kostritzer.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Alemanas.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Artesanales.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Booze.png" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Cervezas-Oscuras.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Cervezas-Premium.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">AC/DC Rock or Bust</h5>
-                        <p class="card-text text-center">600 ml | 8.2% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$18.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Drunke.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fs-4">Alternative Beer Amor Fati</h5>
-                        <p class="card-text text-center">330 ml | 4% | Porter</p>
-                        <p class="card-text text-center fuenteBotones fw-bold fs-4">$15.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Frutales.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fs-4">Moritz Red IPA</h5>
-                        <p class="card-text text-center">330 ml | 6% | Porter</p>
-                        <p class="card-text text-center fuenteBotones fw-bold fs-4">$15.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Heavy.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">Duvel Gift Pack</h5>
-                        <p class="card-text text-center">600 ml | 6% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$33.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Incognito.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body ">
-                        <h5 class="card-title text-center fs-4">Alternative Beer Amor Fati</h5>
-                        <p class="card-text text-center">330 ml | 4% | Porter</p>
-                        <p class="card-text text-center  fuenteBotones fw-bold fs-4">$15.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
 
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Navidad.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fs-4">Alternative Beer Amor Fati</h5>
-                        <p class="card-text text-center">330 ml | 4% | Porter</p>
-                        <p class="card-text text-center fuenteBotones fw-bold fs-4">$15.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
                 </div>
             </div>
-            <div class="col">
-                <div class="card h-100">
-                    <img src="assets/img/paks/Six-Pack-Oktoberfest.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fs-4">Moritz Red IPA</h5>
-                        <p class="card-text text-center">330 ml | 6% | Porter</p>
-                        <p class="card-text text-center fuenteBotones fw-bold fs-4">$15.900</p>
-                    </div>
-                    <div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col ">
-                <div class="card h-100">
-                    <img src="assets/img/paks/straffe-hendrik-gift-pack.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fs-4">Duvel Gift Pack</h5>
-                        <p class="card-text text-center">600 ml | 6% | Porter</p>
-                        <p class="card-text text-center fuenteBotones fw-bold fs-4">$33.900</p>
-                    </div>-->
-                    <!--<div class="text-center btn-dark row p-3 ">
-                        <button class="btn colorBotones text-white fs-4 fuenteBotones fw-b col-12 addtocart">Añadir al carrito</button>
-                    </div>-->
-                </div>
-            </div>
-        <!--</div>
-    </div>-->
-</section>
+        </section>
+    </div>
+</div>
+
 <app-footer></app-footer>
