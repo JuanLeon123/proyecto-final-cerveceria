@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CartService } from 'src/app/services/cart.service';
 import { CheckoutService } from 'src/app/services/checkout.service';
 import {informacionFacturacion} from 'src/app/models/checkout'
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-checkout',
@@ -53,7 +54,21 @@ export class CheckoutComponent implements OnInit {
       telefono : this.datosEnvioForm.get('telefono')?.value,
       email : this.datosEnvioForm.get('email')?.value,
     }
+
+    Swal.fire({
+      title: 'Gracias Por tu compra. Estamos procesando tu Pedido',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
   }
   
 
 }
+function emptyCart() {
+  throw new Error('Function not implemented.');
+}
+
