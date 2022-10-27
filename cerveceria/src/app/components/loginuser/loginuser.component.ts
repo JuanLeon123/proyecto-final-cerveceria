@@ -21,4 +21,10 @@ export class LoginuserComponent implements OnInit {
     this.renderer2.removeClass(desplegarNavAdmin,"visually-hidden")
   }
 
+  login() {
+    let email = localStorage.getItem('correo')
+    let password = localStorage.getItem('password')
+    if(correo === email || correo === password)
+  }
+
 }

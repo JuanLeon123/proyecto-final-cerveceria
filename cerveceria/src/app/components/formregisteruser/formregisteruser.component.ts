@@ -64,8 +64,8 @@ export class FormregisteruserComponent implements OnInit {
       alias: this.registerUser.get('alias')?.value
     }
     console.log(NUEVOUSUARIO)
+    localStorage.setItem("dataUsuario", JSON.stringify(NUEVOUSUARIO))
   }
-
   desplegar(){
     const deplegarForm = this.segundofromulario?.nativeElement
     this.renderer2.removeClass(deplegarForm,"visually-hidden")
