@@ -12,11 +12,9 @@ import { LoginuserComponent } from './components/loginuser/loginuser.component';
 import { ProfileuserComponent } from './components/profileuser/profileuser.component';
 import { EditprofileComponent } from './components/editprofile/editprofile.component';
 import { ListproductsComponent } from './components/listproducts/listproducts.component';
-
 import { ViewindividualproductComponent } from './components/viewindividualproduct/viewindividualproduct.component';
 import { CheckoutComponent } from './components/checkout/checkout.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
-
 
 
 
@@ -34,10 +32,9 @@ const routes: Routes = [
     { path: 'EditarPerfil', component: EditprofileComponent },
     { path: 'ListadoProductos', component: ListproductsComponent },
     { path: '', component: HomeComponent },
-    { path: 'PacksComponent', component: PacksComponent },
-    { path: 'CartComponent', component: CartComponent },
-    { path: 'ViewindividualproductComponent', component: ViewindividualproductComponent },
-    { path: 'CheckoutComponent', component: CheckoutComponent},
+    { path: 'paquetesProductos', component: PacksComponent },
+    { path: 'descripcionProducto', component: ViewindividualproductComponent },
+    { path: 'pago', component: CheckoutComponent },
     { path:  '404'   , component: NotFoundComponent},
     { path: '**', redirectTo: '404', pathMatch: 'full'}
 ];
@@ -47,3 +44,7 @@ const routes: Routes = [
     exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
+
+

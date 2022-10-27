@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-
+import { HttpClientModule} from "@angular/common/http"
 import { NgxSliderModule } from '@angular-slider/ngx-slider';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +23,9 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { FormproductsComponent } from './components/formproducts/formproducts.component';
 import { TableproductsComponent } from './components/tableproducts/tableproducts.component';
 
+
+
+
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { EditprofileComponent } from './components/editprofile/editprofile.component';
 import { FooterhomeComponent } from './components/footerhome/footerhome.component';
@@ -35,38 +38,41 @@ import { ReactiveFormsModule } from "@angular/forms";
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    NavbarComponent,
-    FooterComponent,
-    HomeComponent,
-    Navbar2Component,
-    FormregisteruserComponent,
-    ProfileuserComponent,
-    UserlistComponent,
-    LoginuserComponent,
-    ListusersComponent,
-    ProductsComponent,
-    ViewindividualproductComponent,
-    PacksComponent,
-    CartComponent,
-    CheckoutComponent,
-    FormproductsComponent,
-    TableproductsComponent,
-    EditprofileComponent,
-    FooterhomeComponent,
-    ListproductsComponent,
-    NotFoundComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    CarouselModule,
-    NgxSliderModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        FooterComponent,
+        HomeComponent,
+        Navbar2Component,
+        FormregisteruserComponent,
+        ProfileuserComponent,
+        UserlistComponent,
+        LoginuserComponent,
+        ListusersComponent,
+        ProductsComponent,
+        ViewindividualproductComponent,
+        PacksComponent,
+        CartComponent,
+        CheckoutComponent,
+        FormproductsComponent,
+        TableproductsComponent,
+        EditprofileComponent,
+        FooterhomeComponent,
+        ListproductsComponent,
+        NotFoundComponent
+    
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        CarouselModule,
+        NgxSliderModule,
+        ReactiveFormsModule,
+        HttpClientModule
+    
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
