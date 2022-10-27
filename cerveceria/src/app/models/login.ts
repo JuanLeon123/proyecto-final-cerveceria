@@ -1,4 +1,5 @@
 export class loginusuario{
+    
     correo: string;
     password: string;
 
