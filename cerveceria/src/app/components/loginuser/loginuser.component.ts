@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewChild, Renderer2, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { loginusuario } from 'src/app/models/login';
 import Swal from 'sweetalert2'
 
@@ -9,21 +10,29 @@ import Swal from 'sweetalert2'
 })
 export class LoginuserComponent implements OnInit {
 
-    @ViewChild('desplegarNavAdmin') btnNavAdmin?: ElementRef
-    @ViewChild('.NavAdmin') ViewNavAdmin?: ElementRef
+ 
+    validarUsuario: FormGroup
 
+    constructor(private fb: FormBuilder) {
 
-    constructor(private renderer2: Renderer2) { }
+        this.validarUsuario = this.fb.group({
+
+            correo: ["", Validators.required],
+            password: ["", Validators.required]
+        })
+    }
 
     ngOnInit(): void {
     }
 
-    desplegarNav() {
-        const desplegarNavAdmin = this.ViewNavAdmin?.nativeElement
-        this.renderer2.removeClass(desplegarNavAdmin, "visually-hidden")
-    }
+    guardarValidacion() {
+        console.log(this.validarUsuario)
 
-    login() {
+
+
+
+
+        //login() {
         // let email = localStorage.getItem('correo')
         // let password = localStorage.getItem('password')
         // let correo_usuario = document.getElementById("inputEmail4")?.value
@@ -36,7 +45,7 @@ export class LoginuserComponent implements OnInit {
         //         location.href = 'https://mur75.github.io/cerveceria_angular/'
         //     }
         // }
+
     }
+
 }
-
-

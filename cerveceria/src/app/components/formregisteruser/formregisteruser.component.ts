@@ -64,6 +64,7 @@ export class FormregisteruserComponent implements OnInit {
       password: this.registerUser.get('password')?.value,
       alias: this.registerUser.get('alias')?.value
     }
+    
     console.log(NUEVOUSUARIO)
     localStorage.setItem("dataUsuario", JSON.stringify(NUEVOUSUARIO))
     Swal.fire({
