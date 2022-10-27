@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild, Renderer2} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from "@angular/forms";
 import { registrarusuario } from 'src/app/models/registrarusuario';
+import Swal from 'sweetalert2'
 
 
 @Component({
@@ -65,6 +66,11 @@ export class FormregisteruserComponent implements OnInit {
     }
     console.log(NUEVOUSUARIO)
     localStorage.setItem("dataUsuario", JSON.stringify(NUEVOUSUARIO))
+    Swal.fire({
+        icon: 'success',
+        title: 'Felicidades!',
+        text: 'Ahora eres un nuevo miembro de nuestro club'
+    })
   }
   desplegar(){
     const deplegarForm = this.segundofromulario?.nativeElement
